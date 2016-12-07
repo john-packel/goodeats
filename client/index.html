@@ -7,7 +7,7 @@
   </head>
   <body ng-app="goodEats">
     <div class = "foodSearch" ng-controller="inputController">
-      <input type="text" ng-model="query.term" placeholder="habe Bier?" />
+      <input type="text" ng-model="query.term" placeholder="What eats?" />
       <input type="text" ng-model="query.location" placeholder ="Where are you?" />
       <button ng-click="search()"> submit </button>
       <ul>
@@ -28,7 +28,7 @@
     <button type="submit" class="btn btn-default" ng-click="vm.submit(vm.user)">Submit</button>
     <br>
     <br>
-    <button ng-model="openEstab" ng-change="openEstab" ng-controller="openEstabController" ng-click="toggleOpenEstablishments()">Only open establishments </button>
+    <button ng-model="openEstab" ng-change="openEstab" ng-controller="openEstabController" ng-click="toggleOpenEstablishments()"> Filter open establishments </button>
 </body>
   <script src="app.js" charset="utf-8"></script>
   <script src="locator/locationController.js"></script>
